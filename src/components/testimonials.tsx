@@ -1,5 +1,3 @@
-// import { Card, CardContent } from "@/components/ui/card"
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Star } from "lucide-react"
 import Image from "next/image"
 
@@ -33,6 +31,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="py-24 px-6">
+      {/* @fix: add to navbar and add id to section */}
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-balance mb-6">Client Success Stories</h2>
