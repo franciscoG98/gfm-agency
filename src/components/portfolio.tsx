@@ -47,9 +47,15 @@ export function Portfolio() {
     <section id="portfolio" className="py-24 px-6 bg-muted/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-balance mb-6">Featured Work</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-balance mb-6">
+            Nuestros Proyectos Destacados
+          </h2>
           <p className="text-xl text-muted-foreground text-balance max-w-2xl mx-auto">
-            A showcase of our recent projects that demonstrate our expertise across various industries and technologies.
+            Muestra de nuestro trabajo en desarrollo web, automatizaciones y soluciones digitales a medida.
+            {/* A showcase of our recent projects that demonstrate our expertise across various industries and technologies. */}
+            {/* Una selección de proyectos recientes que reflejan nuestro enfoque en desarrollo, automatización y estrategia digital. */}
+            {/* Proyectos destacados donde combinamos código, integración y tecnología para generar resultados reales. */}
+            {/* Algunos de los proyectos que demuestran cómo transformamos ideas en soluciones digitales escalables. */}
           </p>
         </div>
 
@@ -78,7 +84,7 @@ export function Portfolio() {
                 <h3 className="text-xl font-bold mb-3 text-foreground">{project.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="text-xs">
+                    <span key={tagIndex} className="text-xs border border-primary rounded-xl px-2 py-1">
                       {tag}
                     </span>
                   ))}
